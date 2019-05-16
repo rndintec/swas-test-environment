@@ -1,0 +1,23 @@
+daemon=1
+
+# Как и в случае s testnet, нам нужно разрешить взаимодействие с демоном.
+# Параметр ниже разрешает bitcoind прослушивание порта JSON-RPC
+server=1
+rpcuser=intectest
+rpcpassword=2PLD4jvuy6Mgoy0QIf9BNafpFtkXN2bJCfh7b9pHwlQ=
+#rpcauth=intectest:9e66e142b6a2b63684a1287d3aa98$ffcf8ef0982a0567112eaddb052353da9f927396e1f8daff02b782297859a26f
+
+# указываем RPC порт. Для каждого из сервисов он должен быть разным!
+# По умолчанию это порт 8332, но настоятельно рекомендую использовать другие значения
+rpcport=18232
+
+# Указываем режим работы - Regression Test Mode
+regtest=1
+
+# Следующие параметры я опишу позже, важно только чтобы они тоже были различными
+
+port=18233
+addnode=localhost:28233
+
+nuparams=5ba81b19:5
+nuparams=76b809bb:10
